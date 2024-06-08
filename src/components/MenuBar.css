@@ -1,0 +1,40 @@
+.menu-bar {
+  /* Menu Bar */
+
+  position: absolute;
+  width: 269px;
+  height: 69px;
+  left: 479px;
+  top: 41px;
+}
+
+.logo {
+  position: absolute;
+  width: 292px;
+  height: 164px;
+  left: 44px;
+  top: -14px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.menu-men,
+.menu-divider,
+.menu-women {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.menu-divider {
+  margin: 0 10px;
+}
+
+.menu-women {
+  color: #843cfc;
+}

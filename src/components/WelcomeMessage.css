@@ -1,0 +1,49 @@
+.cont {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+}
+
+.welcome-message {
+  /* Step Into the Future of Online Shopping with Polypo */
+
+  font-family: "Lucida Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 82px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+.main-image {
+  /* Rectangle 5 */
+  margin-top: 109px;
+  background: url(cmd98_white_mannequin_e7883e2f-82e9-430a-b53c-d8472dfc5e08.png);
+  border-radius: 60px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: auto;
+  width: 100%;
+}
+.little {
+  /* what to try */
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #797979;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

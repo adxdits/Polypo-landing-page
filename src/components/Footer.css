@@ -1,0 +1,32 @@
+.footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links span {
+  margin: 0 15px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer-links span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.item {
+  text-align: center;
+  margin: 20px;
+}
+
+.model-image {
+  width: 200px;
+  height: auto;
+}
+
+.item-description {
+  font-family: "Lucida Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
+  margin-top: 10px;
+}
