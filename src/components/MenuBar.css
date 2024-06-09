@@ -1,24 +1,23 @@
 .menu-bar {
-  /* Menu Bar */
-
-  position: absolute;
-  width: 269px;
-  height: 69px;
-  left: 479px;
-  top: 41px;
+  display: flex;
 }
 
 .logo {
-  position: absolute;
-  width: 292px;
-  height: 164px;
-  left: 44px;
-  top: -14px;
+  height: auto;
+  margin-right: 100px;
 }
 
 .menu-items {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 62px;
+  background: rgba(255, 255, 255, 0.61);
+  border: 1px solid #000000;
+  backdrop-filter: blur(18.9px);
+  border-radius: 150px;
+  margin-top: 45px;
 }
 
 .menu-men,
@@ -26,8 +25,7 @@
 .menu-women {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 33px;
+  font-size: 22px;
   color: #000000;
 }
 

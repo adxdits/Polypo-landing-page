@@ -7,13 +7,28 @@ const Items = () => (
   <div className="items">
     <div className="item">
       <img src={modelMan} alt="Model Man" className="model-image" />
-      <div className="item-description">Polypo blazer suit</div>
+      <div className="item-description">POLYPO CROP TOP</div>
     </div>
     <div className="item">
       <img src={modelWoman} alt="Model Woman" className="model-image" />
-      <div className="item-description">Polypo crop top</div>
+      <div className="item-description">POLYPO SIMPLE SHIRT</div>
     </div>
-    {/* Add more items as needed */}
+    <div className="item">
+      <img src={modelWoman} alt="Model Woman" className="model-image" />
+      <div className="item-description">POLYPO SIMPLE SHIRT</div>
+    </div>
+    <div className="item">
+      <img src={modelWoman} alt="Model Woman" className="model-image" />
+      <div className="item-description">POLYPO SIMPLE SHIRT</div>
+    </div>
+    <div className="item">
+      <img src={modelWoman} alt="Model Woman" className="model-image" />
+      <div className="item-description">POLYPO SIMPLE SHIRT</div>
+    </div>
+    <div className="item">
+      <img src={modelWoman} alt="Model Woman" className="model-image" />
+      <div className="item-description">POLYPO SIMPLE SHIRT</div>
+    </div>
   </div>
 );
 
