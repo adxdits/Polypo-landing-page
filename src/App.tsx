@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import MenuBar from "./components/MenuBar";
 import WelcomeMessage from "./components/WelcomeMessage";
-import IntroMessage from "./components/IntroMessage";
 import Items from "./components/Items";
 import Footer from "./components/footer";
 
@@ -12,6 +11,9 @@ function App() {
       <MenuBar />
       <WelcomeMessage />
       <Items />
+      <div className="foot">
+        <Footer />
+      </div>
     </div>
   );
 }

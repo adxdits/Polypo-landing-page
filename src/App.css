@@ -1,1 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.App {
+  margin: 1 1;
+  padding: 1px;
+  transform: scale(0.9);
+  transform-origin: top center;
+}
+
+.App > * {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 5px;
+    transform: scale(0.9);
+  }
+
+  .App > * {
+    margin-bottom: 15px;
+  }
+}
