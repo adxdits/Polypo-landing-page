@@ -1,56 +1,85 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../assets/logo.png";
-import socialIcon from "../assets/Social Media Icons/X.svg";
-import purpleLogo from "../assets/Polypo Logo Updated 3D square zoom in png  - Copy 1 (1).png";
+import logo from "../assets/Thumbnails/logofooter.png";
+import updatedLogo from "../assets/Polypo Logo Updated 3D square zoom in png  - Copy 1 (1).png";
+import instagramIcon from "../assets/Social Media Icons/instagram.svg";
+import linkedinIcon from "../assets/Social Media Icons/linkedin.svg";
+import tiktokIcon from "../assets/Social Media Icons/tiktok.svg";
+import twitterIcon from "../assets/Social Media Icons/X.svg";
+import vectorStroke from "../assets/Social Media Icons/snapchat.svg";
 
-const Footer = () => {
+export const Footer = () => {
   return (
-    <footer>
-      <div className="footer-content">
-        <img src={logo} alt="Polypo Logo" className="logo" />
-        <p>
-          The Future of Fashion is Personalized, Interactive, and All About You!
-        </p>
-        <div className="footer-links">
-          <div className="category">
-            <h4>WOMAN</h4>
-            <ul>
-              <li>3D Viewer</li>
-              <li>VTO Tech</li>
-              <li>AR Tech</li>
-            </ul>
-          </div>
-          <div className="category">
-            <h4>MAN</h4>
-            <ul>
-              <li>3D Viewer</li>
-              <li>VTO Tech</li>
-              <li>AR Tech</li>
-            </ul>
-          </div>
+    <div className="component">
+      <p className="text-wrapper"> Copyright © 2024, All Right Reserved.</p>
+      <div className="div">CONTACT US</div>
+      <div className="text-wrapper-2">PRIVACY POLICY</div>
+      <div className="text-wrapper-3">TERMS AND CONDITIONS</div>
+      <div className="overlap-group">
+        <div className="overlap">
+          <img className="polypos" alt="Polypo" src={logo} />
+          <p className="the-future-of">
+            <span className="span">
+              The Future of Fashion is Personalized, Interactive, and{" "}
+            </span>
+            <span className="span">
+              <b>All About You!</b>
+            </span>
+          </p>
         </div>
-        <div className="social-media">
-          <a href="#">
-            <img src={socialIcon} alt="Instagram" />
-          </a>
-          <a href="#">
-            <img src={socialIcon} alt="LinkedIn" />
-          </a>
-          <a href="#">
-            <img src={socialIcon} alt="TikTok" />
-          </a>
-          <a href="#">
-            <img src={socialIcon} alt="Snapchat" />
-          </a>
+        <img
+          className="polypo-logo-updated"
+          alt="Polypo logo updated"
+          src={updatedLogo}
+        />
+        <div className="let-s-talk-wrapper">
+          <div className="let-s-talk">LET’S TALK!</div>
         </div>
-        <button className="contact-button">LET'S TALK!</button>
+        <div className="insta-svgrepo-com-wrapper">
+          <img
+            className="insta-svgrepo-com"
+            alt="Insta svgrepo com"
+            src={instagramIcon}
+          />
+        </div>
+        <div className="linkedin-svgrepo-com-wrapper">
+          <img
+            className="linkedin-svgrepo-com"
+            alt="Linkedin svgrepo com"
+            src={linkedinIcon}
+          />
+        </div>
+        <div className="tiktok-svgrepo-com-wrapper">
+          <img
+            className="tiktok-svgrepo-com"
+            alt="Tiktok svgrepo com"
+            src={tiktokIcon}
+          />
+        </div>
+        <div className="x-logo-original-wrapper">
+          <img
+            className="x-logo-original"
+            alt="X logo original"
+            src={twitterIcon}
+          />
+        </div>
+        <div className="vector-stroke-wrapper">
+          <img
+            className="vector-stroke"
+            alt="Vector stroke"
+            src={vectorStroke}
+          />
+        </div>
+        <div className="text-wrapper-4">WOMAN</div>
+        <div className="text-wrapper-5">MAN</div>
+        <div className="text-wrapper-6">3D Viewer</div>
+        <div className="text-wrapper-7">3D Viewer</div>
+        <div className="text-wrapper-8">VTO Tech</div>
+        <div className="text-wrapper-9">VTO Tech</div>
+        <div className="text-wrapper-10">AR Tech</div>
+        <div className="text-wrapper-11">AR Tech</div>
       </div>
-      <div className="footer-bottom">
-        <img src={purpleLogo} alt="Purple U Logo" className="purple-logo" />
-        <p>&copy; 2024 Polypo. All Rights Reserved.</p>
-      </div>
-    </footer>
+    </div>
   );
 };
 

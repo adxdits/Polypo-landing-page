@@ -21,8 +21,7 @@
 
 .main-image {
   /* Rectangle 5 */
-  margin-top: 109px;
-  background: url(cmd98_white_mannequin_e7883e2f-82e9-430a-b53c-d8472dfc5e08.png);
+  margin-top: 10px;
   border-radius: 60px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   height: auto;
