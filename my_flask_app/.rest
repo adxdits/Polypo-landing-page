@@ -1,0 +1,12 @@
+POST http://127.0.0.1:5000/product
+Content-Type: application/json
+
+{
+    "id":"004",
+    "name":"rfrrr",
+    "image_url":"fksjdfksd",
+    "description":"sjdkfjsk"
+}
+###
+
+GET http://127.0.0.1:5000/product
