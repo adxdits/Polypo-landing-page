@@ -6,21 +6,25 @@ import "./Items.css";
 const Items = () => {
   const [items, setItems] = useState([]);
   const [newImage, setNewImage] = useState("");
+  const [newId, setId] = useState("");
   const [newDescription, setNewDescription] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/products")
+    fetch("http://127.0.0.1:5000/product")
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, []);
 
   const handleAddItem = (e) => {
     e.preventDefault();
+    setId(newId + 1);
     const newItem = {
+      Id: newId,
+      name: newDescription,
       description: newDescription,
       image_url: newImage,
     };
-    fetch("http://127.0.0.1:5000/products", {
+    fetch("http://127.0.0.1:5000/product", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
