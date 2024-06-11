@@ -1,8 +1,9 @@
 .items {
   display: flex;
   text-align: center;
-  justify-content: center;
-
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -12,7 +13,7 @@
 }
 
 .model-image {
-  width: 320px;
+  width: 400px;
   height: auto;
   border-radius: 35px;
 }

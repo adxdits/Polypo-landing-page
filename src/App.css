@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Lucida Sans";
+  src: url("./assets/fonts/LSANS.TTF");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +15,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 10px;
-  width: 1920px;
-  border: 1px solid blue;
+  width: 100vw;
 }
 
 .MenuBar {
