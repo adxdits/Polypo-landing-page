@@ -3,6 +3,9 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 40px;
+  width: 1822px;
+  height: auto;
+  border: 1px solid red;
 }
 
 .welcome-message {
