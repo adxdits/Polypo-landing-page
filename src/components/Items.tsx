@@ -1,12 +1,9 @@
-// Items.js
-
 import React, { useState, useEffect } from "react";
 import "./Items.css";
 
 const Items = () => {
   const [items, setItems] = useState([]);
   const [newImage, setNewImage] = useState("");
-  const [newId, setId] = useState("");
   const [newDescription, setNewDescription] = useState("");
 
   useEffect(() => {
@@ -17,9 +14,7 @@ const Items = () => {
 
   const handleAddItem = (e) => {
     e.preventDefault();
-    setId(newId + 1);
     const newItem = {
-      Id: newId,
       name: newDescription,
       description: newDescription,
       image_url: newImage,
@@ -39,6 +34,18 @@ const Items = () => {
       });
   };
 
+  const handleDeleteItem = (id) => {
+    fetch(`http://127.0.0.1:5000/product/${id}`, {
+      method: "DELETE",
+    }).then((response) => {
+      if (response.ok) {
+        setItems(items.filter((item) => item.id !== id));
+      } else {
+        console.error("Failed to delete item");
+      }
+    });
+  };
+
   return (
     <div>
       <div className="items">
@@ -50,6 +57,7 @@ const Items = () => {
               className="model-image"
             />
             <div className="item-description">{item.description}</div>
+            <button onClick={() => handleDeleteItem(item.id)}>Delete</button>
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
-import sqlite3
 from flask import Flask, g, request, jsonify
 from flask_cors import CORS
+import sqlite3
 
 app = Flask(__name__)
 CORS(app, origins="http://localhost:5173")
@@ -30,16 +30,26 @@ def getproduct():
 def postproduct():
     db = getdb()
     data = request.json
-    id = data.get('id')
     name = data.get('name')
     image_url = data.get('image_url')
     description = data.get('description')
 
     cursor = db.cursor()
-    cursor.execute('''INSERT INTO product (id, name, image_url, description) VALUES (?, ?, ?, ?)''', (id, name, image_url, description))
+    cursor.execute('''INSERT INTO product (name, image_url, description) VALUES (?, ?, ?)''', (name, image_url, description))
     db.commit()
-    response = jsonify({'message': 'Product added successfully'})
+    product_id = cursor.lastrowid
+    response = jsonify({'id': product_id, 'name': name, 'image_url': image_url, 'description': description})
     return response, 201
+
+@app.route('/product/<int:id>', methods=['DELETE'])
+def deleteproduct(id):
+    db = getdb()
+    cursor = db.cursor()
+    cursor.execute('''DELETE FROM product WHERE id = ?''', (id,))
+    db.commit()
+    if cursor.rowcount == 0:
+        return jsonify({'message': 'Product not found'}), 404
+    return jsonify({'message': 'Product deleted successfully'}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
